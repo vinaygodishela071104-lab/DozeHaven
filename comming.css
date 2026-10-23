@@ -1,0 +1,507 @@
+.dozehaven-coming-soon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+  overflow: hidden;
+  padding-block: clamp(80px, 12vh, 120px);
+  background: var(--background);
+  transition: var(--theme-transition);
+}
+
+.dozehaven-coming-soon__preferences {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dozehaven-coming-soon__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: var(--primary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-round);
+  box-shadow: var(--shadow-soft);
+  cursor: pointer;
+  transition: var(--transition), var(--theme-transition);
+}
+
+.dozehaven-coming-soon__toggle svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.8;
+}
+
+.dozehaven-coming-soon__content {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin-inline: auto;
+  padding-inline: 24px;
+  text-align: center;
+}
+
+.dozehaven-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 1.2vw, 18px);
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  margin-block-end: 40px;
+  color: var(--text);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.dozehaven-logo__image-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.dozehaven-logo__image {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.dozehaven-logo__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+  gap: 4px;
+}
+
+.dozehaven-logo__name {
+  display: block;
+  font-family: var(--heading-font);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.dozehaven-logo__doze {
+  color: var(--primary);
+}
+
+.dozehaven-logo__haven {
+  color: var(--secondary);
+}
+
+.dozehaven-logo__tagline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(4px, 0.6vw, 9px);
+  width: 100%;
+  color: var(--primary);
+  font-family: var(--body-font);
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.dozehaven-logo__line {
+  display: block;
+  min-width: 4px;
+  max-width: 14px;
+  height: 1px;
+  background: var(--secondary);
+  flex: 0 1 14px;
+}
+
+.dozehaven-coming-soon__eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-block-end: 20px;
+  color: var(--muted);
+  font-family: var(--body-font);
+  font-size: var(--sub-description-font-size);
+  font-weight: var(--button-font-weight);
+  letter-spacing: 0.16em;
+  line-height: var(--sub-description-line-height);
+  transition: var(--theme-transition);
+}
+
+.dozehaven-coming-soon__eyebrow-line {
+  display: block;
+  width: 28px;
+  height: 1px;
+  flex: 0 0 28px;
+  background: var(--secondary);
+  transition: var(--theme-transition);
+}
+
+.dozehaven-coming-soon__title {
+  margin: 0;
+  color: var(--primary);
+  font-family: var(--heading-font);
+  font-size: var(--hero-heading-size);
+  font-weight: var(--hero-heading-weight);
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  transition: var(--theme-transition);
+}
+
+.dozehaven-coming-soon__title > span {
+  display: block;
+  color: var(--secondary);
+}
+
+.dozehaven-coming-soon__text {
+  max-width: 540px;
+  margin-block-start: 20px;
+  margin-inline: auto;
+  color: var(--muted);
+  font-family: var(--body-font);
+  font-size: var(--description-font-size);
+  font-weight: var(--description-font-weight);
+  line-height: var(--description-line-height);
+  transition: var(--theme-transition);
+}
+
+.dozehaven-coming-soon__status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-block-start: 32px;
+  padding: 10px 20px;
+  color: var(--primary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-soft);
+  font-family: var(--body-font);
+  font-size: var(--sub-description-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: var(--sub-description-line-height);
+  transition: var(--transition), var(--theme-transition);
+}
+
+.dozehaven-coming-soon__status-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: var(--black);
+  background: var(--secondary);
+  border-radius: var(--radius-round);
+  transition: var(--theme-transition);
+}
+
+.dozehaven-coming-soon__status-icon svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 1.8;
+}
+
+.dozehaven-coming-soon__details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-block-start: 32px;
+}
+
+.dozehaven-coming-soon__detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+  font-family: var(--body-font);
+  font-size: var(--sub-description-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: var(--sub-description-line-height);
+  transition: var(--theme-transition);
+}
+
+.dozehaven-coming-soon__detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  color: var(--black);
+  background: var(--secondary);
+  border-radius: var(--radius-round);
+  transition: var(--theme-transition);
+}
+
+.dozehaven-coming-soon__detail-icon svg {
+  width: 17px;
+  height: 17px;
+  stroke-width: 1.8;
+}
+
+.dozehaven-coming-soon__detail-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border);
+  transition: var(--theme-transition);
+}
+
+.dozehaven-coming-soon__decoration {
+  position: absolute;
+  z-index: 0;
+  border-radius: var(--radius-round);
+  background: var(--secondary);
+  opacity: 0.12;
+  transition: var(--theme-transition);
+}
+
+.dozehaven-coming-soon__decoration--one {
+  top: -80px;
+  left: -80px;
+  width: 280px;
+  height: 280px;
+}
+
+.dozehaven-coming-soon__decoration--two {
+  right: -100px;
+  bottom: -100px;
+  width: 320px;
+  height: 320px;
+}
+
+.dozehaven-coming-soon a:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 5px;
+}
+
+/* Hover Effects */
+@media (hover: hover) and (pointer: fine) {
+  .dozehaven-coming-soon__toggle:hover {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-secondary);
+    transform: translateY(-2px);
+  }
+
+  .dozehaven-coming-soon__status:hover {
+    border-color: var(--secondary);
+    box-shadow: var(--shadow-secondary);
+    transform: translateY(-2px);
+  }
+
+  .dozehaven-coming-soon__status:hover .dozehaven-coming-soon__status-icon {
+    transform: scale(1.08);
+  }
+}
+
+/* RTL */
+html[dir="rtl"] .dozehaven-coming-soon {
+  direction: rtl;
+}
+
+html[dir="rtl"] .dozehaven-coming-soon__preferences {
+  right: auto;
+  left: 24px;
+}
+
+html[dir="rtl"] .dozehaven-logo {
+  flex-direction: row;
+}
+
+html[dir="rtl"] .dozehaven-logo__content {
+  align-items: flex-end;
+}
+
+/* Dark Mode */
+body.dark-mode .dozehaven-coming-soon__toggle {
+  color: var(--white);
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .dozehaven-logo__doze {
+  color: var(--white);
+}
+
+body.dark-mode .dozehaven-logo__haven {
+  color: var(--secondary);
+}
+
+body.dark-mode .dozehaven-logo__tagline {
+  color: var(--white);
+}
+
+body.dark-mode .dozehaven-coming-soon__eyebrow {
+  color: var(--muted);
+}
+
+body.dark-mode .dozehaven-coming-soon__title {
+  color: var(--white);
+}
+
+body.dark-mode .dozehaven-coming-soon__title > span {
+  color: var(--secondary);
+}
+
+body.dark-mode .dozehaven-coming-soon__text {
+  color: var(--muted);
+}
+
+body.dark-mode .dozehaven-coming-soon__status {
+  color: var(--white);
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .dozehaven-coming-soon__status-icon,
+body.dark-mode .dozehaven-coming-soon__detail-icon {
+  color: #10201b;
+  background: var(--secondary);
+}
+
+body.dark-mode .dozehaven-coming-soon__detail {
+  color: var(--white);
+}
+
+body.dark-mode .dozehaven-coming-soon__detail-divider {
+  background: var(--border);
+}
+
+body.dark-mode .dozehaven-coming-soon__decoration {
+  background: var(--secondary);
+  opacity: 0.08;
+}
+
+/* Samsung Galaxy S8+ */
+@media screen and (max-width: 480px) {
+  .dozehaven-coming-soon {
+    padding-block: 88px 56px;
+  }
+
+  .dozehaven-coming-soon__preferences {
+    top: 16px;
+    right: 16px;
+  }
+
+  html[dir="rtl"] .dozehaven-coming-soon__preferences {
+    right: auto;
+    left: 16px;
+  }
+
+  .dozehaven-logo {
+    margin-block-end: 32px;
+  }
+
+  .dozehaven-logo__image {
+    width: 56px;
+    height: 56px;
+  }
+
+  .dozehaven-logo__name {
+    font-size: 1.7rem;
+  }
+
+  .dozehaven-logo__tagline {
+    font-size: 0.52rem;
+  }
+
+  .dozehaven-coming-soon__title {
+    font-size: var(--hero-heading-size);
+  }
+
+  .dozehaven-coming-soon__text {
+    margin-block-start: 16px;
+  }
+
+  .dozehaven-coming-soon__status {
+    margin-block-start: 26px;
+    padding: 9px 16px;
+  }
+
+  .dozehaven-coming-soon__details {
+    gap: 12px;
+    margin-block-start: 26px;
+  }
+
+  .dozehaven-coming-soon__detail-divider {
+    display: none;
+  }
+
+  .dozehaven-coming-soon__decoration--one {
+    width: 180px;
+    height: 180px;
+  }
+
+  .dozehaven-coming-soon__decoration--two {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* iPad Mini */
+@media screen and (min-width: 768px) and (max-width: 820px) {
+  .dozehaven-coming-soon {
+    padding-block: 96px;
+  }
+}
+
+/* iPad Pro 11" */
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+  .dozehaven-coming-soon {
+    padding-block: 96px;
+  }
+}
+
+/* Nest Hub */
+@media screen and (width: 1024px) and (height: 600px) {
+  .dozehaven-coming-soon {
+    padding-block: 64px;
+  }
+
+  .dozehaven-logo {
+    margin-block-end: 28px;
+  }
+
+  .dozehaven-logo__image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .dozehaven-logo__name {
+    font-size: 1.9rem;
+  }
+
+  .dozehaven-coming-soon__title {
+    font-size: clamp(2.2rem, 5vw, 3rem);
+  }
+
+  .dozehaven-coming-soon__text {
+    margin-block-start: 16px;
+  }
+
+  .dozehaven-coming-soon__status {
+    margin-block-start: 24px;
+  }
+
+  .dozehaven-coming-soon__details {
+    margin-block-start: 24px;
+  }
+}

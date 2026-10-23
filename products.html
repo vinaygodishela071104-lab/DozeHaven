@@ -1,0 +1,1401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#183C32" />
+    <meta
+      name="description"
+      content="Discover premium mattresses, luxurious bedding, and exceptional comfort with DozeHaven. Transform your sleep experience."
+    />
+
+    <title>DozeHaven | Luxury Sleep Living | Products Page</title>
+
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Figtree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="./main/global.css" />
+    <link rel="stylesheet" href="./main/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a
+        href="index.html"
+        class="dozehaven-logo"
+        aria-label="DozeHaven — Luxury Sleep Living"
+      >
+        <span class="dozehaven-logo__image-wrap">
+          <img
+            src="./images/logo.png"
+            alt="DozeHaven luxury sleep living logo"
+            class="dozehaven-logo__image"
+          />
+        </span>
+
+        <span class="dozehaven-logo__content">
+          <span class="dozehaven-logo__name">
+            <span class="dozehaven-logo__doze">Doze</span
+            ><span class="dozehaven-logo__haven">Haven</span>
+          </span>
+
+          <span class="dozehaven-logo__tagline">
+            <span class="dozehaven-logo__line"></span>
+            <span>LUXURY SLEEP LIVING</span>
+            <span class="dozehaven-logo__line"></span>
+          </span>
+        </span>
+      </a>
+
+      <nav class="navbar" aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li class="dropdown">
+            <a
+              href="index.html"
+              class="dropdown-trigger"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <span>Home</span>
+              <i data-lucide="chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="index.html">
+                  <i data-lucide="house"></i>
+                  <span>Home 1</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="home2.html">
+                  <i data-lucide="layout-template"></i>
+                  <span>Home 2</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="about.html">About</a>
+          </li>
+
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+
+          <li>
+            <a href="pillows-bedding.html">Pillows &amp; Bedding</a>
+          </li>
+
+          <li>
+            <a href="trial-return-policy.html">Trial &amp; Return Policy</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="mobile-quote">
+          <a href="contact.html#enquiry-form" class="btn-primary">
+            <i data-lucide="message-circle"></i>
+            <span>Enquire Now</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="buttons">
+        <button
+          class="icon-btn rtl-btn"
+          id="rtlToggle"
+          type="button"
+          title="RTL Mode"
+          aria-label="Toggle RTL mode"
+        >
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+
+        <button
+          class="icon-btn dark-btn"
+          id="darkToggle"
+          type="button"
+          title="Dark Mode"
+          aria-label="Toggle dark mode"
+        >
+          <i data-lucide="moon"></i>
+        </button>
+
+        <a href="contact.html#enquiry-form" class="btn-primary desktop-quote">
+          <i data-lucide="message-circle"></i>
+          <span>Enquire Now</span>
+        </a>
+
+        <button
+          class="icon-btn menu-btn"
+          id="menuToggle"
+          type="button"
+          title="Menu"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="products-hero" aria-labelledby="productsHeroTitle">
+      <div class="products-hero__overlay" aria-hidden="true"></div>
+
+      <div class="products-hero__container">
+        <div class="products-hero__content">
+          <span class="products-hero__tag">
+            <span>Our Collection</span>
+          </span>
+
+          <h1 class="products-hero__heading" id="productsHeroTitle">
+            Explore Our
+            <span>Collection.</span>
+          </h1>
+
+          <p class="products-hero__description">
+            Discover thoughtfully designed mattresses, bedding, and home décor
+            created for everyday comfort.
+          </p>
+
+          <div class="products-hero__actions">
+            <a href="#products-grid" class="btn-primary">
+              <span>Browse Products</span>
+              <i data-lucide="arrow-down" aria-hidden="true"></i>
+            </a>
+
+            <a href="#product-comparison" class="btn-secondary">
+              <span>Compare Products</span>
+              <i data-lucide="arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="products-grid"
+      id="products-grid"
+      aria-labelledby="productsGridTitle"
+    >
+      <div class="products-grid__container">
+        <div class="products-grid__header">
+          <span class="products-grid__tag">
+            <span>Our Products</span>
+          </span>
+
+          <h2 class="products-grid__heading" id="productsGridTitle">
+            Find What Fits
+            <span>Your Space.</span>
+          </h2>
+
+          <p class="products-grid__description">
+            Browse our collection and find the pieces that suit your comfort,
+            style, and space.
+          </p>
+        </div>
+
+        <div class="products-grid__toolbar">
+          <div
+            class="products-grid__filters"
+            role="tablist"
+            aria-label="Product filters"
+          >
+            <button
+              type="button"
+              class="products-grid__filter"
+              role="tab"
+              aria-selected="true"
+              data-filter="all"
+            >
+              All Types
+            </button>
+
+            <button
+              type="button"
+              class="products-grid__filter"
+              role="tab"
+              aria-selected="false"
+              data-filter="spring"
+            >
+              Spring
+            </button>
+
+            <button
+              type="button"
+              class="products-grid__filter"
+              role="tab"
+              aria-selected="false"
+              data-filter="memory-foam"
+            >
+              Memory Foam
+            </button>
+
+            <button
+              type="button"
+              class="products-grid__filter"
+              role="tab"
+              aria-selected="false"
+              data-filter="orthopaedic"
+            >
+              Orthopaedic
+            </button>
+
+            <button
+              type="button"
+              class="products-grid__filter"
+              role="tab"
+              aria-selected="false"
+              data-filter="accessories"
+            >
+              Accessories
+            </button>
+          </div>
+
+          <div class="products-grid__controls">
+            <div class="products-grid__size-filter">
+              <label for="bedSizeFilter">Bed Size</label>
+
+              <select id="bedSizeFilter" name="bed_size">
+                <option value="all" selected>All Sizes</option>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="queen">Queen</option>
+                <option value="king">King</option>
+              </select>
+            </div>
+
+            <div class="products-grid__sort">
+              <label for="productSort">Sort by</label>
+
+              <select id="productSort" name="sort">
+                <option value="featured" selected>Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-grid__results" id="productsResults">
+          <article
+            class="products-grid__card"
+            data-type="spring"
+            data-size="single"
+            data-price="8999"
+            data-name="Classic Spring Mattress"
+          >
+            <div class="products-grid__image-wrap">
+              <img
+                src="./images/product-spring-single.jpg"
+                alt="Classic spring single mattress"
+                class="products-grid__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="products-grid__badge">Spring</span>
+            </div>
+
+            <div class="products-grid__content">
+              <span class="products-grid__category">Spring · Single</span>
+
+              <h3 class="products-grid__name">Classic Spring Mattress</h3>
+
+              <p class="products-grid__price">₹8,999</p>
+
+              <button
+                type="button"
+                class="btn-primary products-grid__buy"
+                data-product="Classic Spring Mattress"
+                data-price="8999"
+              >
+                <span>Buy Now</span>
+                <i data-lucide="shopping-bag" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="products-grid__card"
+            data-type="spring"
+            data-size="double"
+            data-price="10999"
+            data-name="Premium Spring Mattress"
+          >
+            <div class="products-grid__image-wrap">
+              <img
+                src="./images/product-spring-double.jpg"
+                alt="Premium spring double mattress"
+                class="products-grid__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="products-grid__badge">Spring</span>
+            </div>
+
+            <div class="products-grid__content">
+              <span class="products-grid__category">Spring · Double</span>
+
+              <h3 class="products-grid__name">Premium Spring Mattress</h3>
+
+              <p class="products-grid__price">₹10,999</p>
+
+              <button
+                type="button"
+                class="btn-primary products-grid__buy"
+                data-product="Premium Spring Mattress"
+                data-price="10999"
+              >
+                <span>Buy Now</span>
+                <i data-lucide="shopping-bag" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="products-grid__card"
+            data-type="memory-foam"
+            data-size="queen"
+            data-price="18499"
+            data-name="Signature Memory Foam"
+          >
+            <div class="products-grid__image-wrap">
+              <img
+                src="./images/product-memory-queen.jpg"
+                alt="Signature memory foam queen mattress"
+                class="products-grid__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="products-grid__badge">Memory Foam</span>
+            </div>
+
+            <div class="products-grid__content">
+              <span class="products-grid__category">Memory Foam · Queen</span>
+
+              <h3 class="products-grid__name">Signature Memory Foam</h3>
+
+              <p class="products-grid__price">₹18,499</p>
+
+              <button
+                type="button"
+                class="btn-primary products-grid__buy"
+                data-product="Signature Memory Foam"
+                data-price="18499"
+              >
+                <span>Buy Now</span>
+                <i data-lucide="shopping-bag" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="products-grid__card"
+            data-type="memory-foam"
+            data-size="king"
+            data-price="22499"
+            data-name="Plush Memory Foam"
+          >
+            <div class="products-grid__image-wrap">
+              <img
+                src="./images/product-memory-king.jpg"
+                alt="Plush memory foam king mattress"
+                class="products-grid__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="products-grid__badge">Memory Foam</span>
+            </div>
+
+            <div class="products-grid__content">
+              <span class="products-grid__category">Memory Foam · King</span>
+
+              <h3 class="products-grid__name">Plush Memory Foam</h3>
+
+              <p class="products-grid__price">₹22,499</p>
+
+              <button
+                type="button"
+                class="btn-primary products-grid__buy"
+                data-product="Plush Memory Foam"
+                data-price="22499"
+              >
+                <span>Buy Now</span>
+                <i data-lucide="shopping-bag" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="products-grid__card"
+            data-type="orthopaedic"
+            data-size="double"
+            data-price="18999"
+            data-name="Essential Orthopaedic"
+          >
+            <div class="products-grid__image-wrap">
+              <img
+                src="./images/product-orthopaedic-double.jpg"
+                alt="Essential orthopaedic double mattress"
+                class="products-grid__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="products-grid__badge">Orthopaedic</span>
+            </div>
+
+            <div class="products-grid__content">
+              <span class="products-grid__category">Orthopaedic · Double</span>
+
+              <h3 class="products-grid__name">Essential Orthopaedic</h3>
+
+              <p class="products-grid__price">₹18,999</p>
+
+              <button
+                type="button"
+                class="btn-primary products-grid__buy"
+                data-product="Essential Orthopaedic"
+                data-price="18999"
+              >
+                <span>Buy Now</span>
+                <i data-lucide="shopping-bag" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="products-grid__card"
+            data-type="orthopaedic"
+            data-size="queen"
+            data-price="21999"
+            data-name="Advanced Orthopaedic"
+          >
+            <div class="products-grid__image-wrap">
+              <img
+                src="./images/product-orthopaedic-queen.jpg"
+                alt="Advanced orthopaedic queen mattress"
+                class="products-grid__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="products-grid__badge">Orthopaedic</span>
+            </div>
+
+            <div class="products-grid__content">
+              <span class="products-grid__category">Orthopaedic · Queen</span>
+
+              <h3 class="products-grid__name">Advanced Orthopaedic</h3>
+
+              <p class="products-grid__price">₹21,999</p>
+
+              <button
+                type="button"
+                class="btn-primary products-grid__buy"
+                data-product="Advanced Orthopaedic"
+                data-price="21999"
+              >
+                <span>Buy Now</span>
+                <i data-lucide="shopping-bag" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="products-grid__card"
+            data-type="accessories"
+            data-size="all"
+            data-price="2499"
+            data-name="Cotton Bedsheet Set"
+          >
+            <div class="products-grid__image-wrap">
+              <img
+                src="./images/product-bedsheet-cotton.jpg"
+                alt="Cotton bedsheet set"
+                class="products-grid__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="products-grid__badge">Accessories</span>
+            </div>
+
+            <div class="products-grid__content">
+              <span class="products-grid__category">Bedsheets</span>
+
+              <h3 class="products-grid__name">Cotton Bedsheet Set</h3>
+
+              <p class="products-grid__price">₹2,499</p>
+
+              <button
+                type="button"
+                class="btn-primary products-grid__buy"
+                data-product="Cotton Bedsheet Set"
+                data-price="2499"
+              >
+                <span>Buy Now</span>
+                <i data-lucide="shopping-bag" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="products-grid__card"
+            data-type="accessories"
+            data-size="all"
+            data-price="1299"
+            data-name="Textured Pillow Cover Set"
+          >
+            <div class="products-grid__image-wrap">
+              <img
+                src="./images/product-pillow-covers.jpg"
+                alt="Textured pillow cover set"
+                class="products-grid__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="products-grid__badge">Accessories</span>
+            </div>
+
+            <div class="products-grid__content">
+              <span class="products-grid__category">Pillow Cover Sets</span>
+
+              <h3 class="products-grid__name">Textured Pillow Cover Set</h3>
+
+              <p class="products-grid__price">₹1,299</p>
+
+              <button
+                type="button"
+                class="btn-primary products-grid__buy"
+                data-product="Textured Pillow Cover Set"
+                data-price="1299"
+              >
+                <span>Buy Now</span>
+                <i data-lucide="shopping-bag" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="products-grid__card"
+            data-type="accessories"
+            data-size="all"
+            data-price="1899"
+            data-name="Cloud Support Pillow"
+          >
+            <div class="products-grid__image-wrap">
+              <img
+                src="./images/product-pillow.jpg"
+                alt="Cloud support pillow"
+                class="products-grid__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="products-grid__badge">Accessories</span>
+            </div>
+
+            <div class="products-grid__content">
+              <span class="products-grid__category">Pillows</span>
+
+              <h3 class="products-grid__name">Cloud Support Pillow</h3>
+
+              <p class="products-grid__price">₹1,899</p>
+
+              <button
+                type="button"
+                class="btn-primary products-grid__buy"
+                data-product="Cloud Support Pillow"
+                data-price="1899"
+              >
+                <span>Buy Now</span>
+                <i data-lucide="shopping-bag" aria-hidden="true"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+        <p class="products-grid__empty" id="productsEmpty" hidden>
+          No products found for the selected filters.
+        </p>
+
+        <div
+          class="order-modal"
+          id="orderModal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="orderModalTitle"
+          hidden
+        >
+          <div class="order-modal__backdrop" data-order-close></div>
+
+          <div class="order-modal__panel">
+            <button
+              type="button"
+              class="order-modal__close"
+              data-order-close
+              aria-label="Close order form"
+            >
+              <i data-lucide="x" aria-hidden="true"></i>
+            </button>
+
+            <div class="order-modal__header">
+              <span class="order-modal__tag">Order Request</span>
+
+              <h2 class="order-modal__title" id="orderModalTitle">
+                Place Your Order
+              </h2>
+
+              <p class="order-modal__product">
+                <span data-order-product>Selected Product</span>
+                <span class="order-modal__price" data-order-price>₹0</span>
+              </p>
+            </div>
+
+            <form class="order-modal__form" id="orderForm" novalidate>
+              <div class="order-modal__field">
+                <label for="orderName">
+                  Full Name <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  type="text"
+                  id="orderName"
+                  name="full_name"
+                  placeholder="Enter your full name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="order-modal__field">
+                <label for="orderPhone">
+                  Phone Number <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  type="tel"
+                  id="orderPhone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  autocomplete="tel"
+                  required
+                />
+              </div>
+
+              <div class="order-modal__field">
+                <label for="orderEmail">
+                  Email Address <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  type="email"
+                  id="orderEmail"
+                  name="email"
+                  placeholder="Enter your email address"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="order-modal__field">
+                <label for="orderPincode">
+                  Pincode <span aria-hidden="true">*</span>
+                </label>
+
+                <input
+                  type="text"
+                  id="orderPincode"
+                  name="pincode"
+                  inputmode="numeric"
+                  pattern="[0-9]{6}"
+                  placeholder="Enter your pincode"
+                  required
+                />
+              </div>
+
+              <div class="order-modal__field order-modal__field--full">
+                <label for="orderAddress">
+                  Delivery Address <span aria-hidden="true">*</span>
+                </label>
+
+                <textarea
+                  id="orderAddress"
+                  name="address"
+                  rows="3"
+                  placeholder="Enter your complete delivery address"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="order-modal__field order-modal__field--full">
+                <label for="orderNotes">Order Notes</label>
+
+                <textarea
+                  id="orderNotes"
+                  name="notes"
+                  rows="2"
+                  placeholder="Any special request or preference"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary order-modal__submit">
+                <span>Place Order</span>
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </button>
+            </form>
+
+            <div
+              class="order-modal__confirmation"
+              id="orderConfirmation"
+              role="status"
+              aria-live="polite"
+              hidden
+            >
+              <span class="order-modal__confirmation-icon">
+                <i data-lucide="badge-check" aria-hidden="true"></i>
+              </span>
+
+              <h3>Order Placed</h3>
+
+              <p>
+                Thank you, <span data-order-success-name>Guest</span>. Your
+                order for
+                <span data-order-success-product>your selected product</span>
+                has been placed successfully. Our team will contact you shortly.
+              </p>
+
+              <button type="button" class="btn-secondary" data-order-close>
+                <span>Close</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="featured-collection"
+      id="featured-collection"
+      aria-labelledby="featuredCollectionTitle"
+    >
+      <div class="featured-collection__container">
+        <div class="featured-collection__header">
+          <span class="featured-collection__tag">
+            <span>Featured Collection</span>
+          </span>
+
+          <h2 class="featured-collection__heading" id="featuredCollectionTitle">
+            Thoughtfully Curated
+            <span>for You.</span>
+          </h2>
+
+          <p class="featured-collection__description">
+            A selected range of our best-loved and newest pieces, chosen for
+            their comfort, craftsmanship, and timeless design.
+          </p>
+        </div>
+
+        <div class="featured-collection__grid">
+          <article
+            class="featured-collection__card featured-collection__card--large"
+          >
+            <div class="featured-collection__image-wrap">
+              <img
+                src="./images/featured-signature-memory-foam.jpg"
+                alt="Signature memory foam mattress"
+                class="featured-collection__image"
+                width="1200"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="featured-collection__badge">Bestseller</span>
+            </div>
+
+            <div class="featured-collection__content">
+              <span class="featured-collection__category">
+                Memory Foam · Queen
+              </span>
+
+              <h3 class="featured-collection__name">Signature Memory Foam</h3>
+
+              <p class="featured-collection__text">
+                Designed to contour gently to your body, this mattress offers
+                balanced support and a restful night’s sleep.
+              </p>
+
+              <div class="featured-collection__footer">
+                <p class="featured-collection__price">₹18,499</p>
+
+                <a href="#products-grid" class="btn-primary">
+                  <span>View Product</span>
+                  <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="featured-collection__card featured-collection__card--wide"
+          >
+            <div class="featured-collection__image-wrap">
+              <img
+                src="./images/featured-advanced-orthopaedic.jpg"
+                alt="Advanced orthopaedic mattress"
+                class="featured-collection__image"
+                width="900"
+                height="700"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="featured-collection__badge">New Arrival</span>
+            </div>
+
+            <div class="featured-collection__content">
+              <span class="featured-collection__category">
+                Orthopaedic · Queen
+              </span>
+
+              <h3 class="featured-collection__name">Advanced Orthopaedic</h3>
+
+              <p class="featured-collection__text">
+                Firm, supportive layers help maintain natural spinal alignment
+                throughout the night.
+              </p>
+
+              <div class="featured-collection__footer">
+                <p class="featured-collection__price">₹21,999</p>
+
+                <a href="#products-grid" class="btn-secondary">
+                  <span>View Product</span>
+                  <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured-collection__card">
+            <div class="featured-collection__image-wrap">
+              <img
+                src="./images/featured-linen-bedsheet.jpg"
+                alt="Linen bedsheet set"
+                class="featured-collection__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="featured-collection__badge">Premium</span>
+            </div>
+
+            <div class="featured-collection__content">
+              <span class="featured-collection__category">Bedsheets</span>
+
+              <h3 class="featured-collection__name">Linen Bedsheet Set</h3>
+
+              <p class="featured-collection__text">
+                Soft, breathable linen with a relaxed, timeless texture for
+                everyday comfort.
+              </p>
+
+              <div class="featured-collection__footer">
+                <p class="featured-collection__price">₹3,299</p>
+
+                <a href="#products-grid" class="btn-secondary">
+                  <span>View Product</span>
+                  <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured-collection__card">
+            <div class="featured-collection__image-wrap">
+              <img
+                src="./images/featured-cloud-support-pillow.jpg"
+                alt="Cloud support pillow"
+                class="featured-collection__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+
+              <span class="featured-collection__badge">Comfort Pick</span>
+            </div>
+
+            <div class="featured-collection__content">
+              <span class="featured-collection__category">Pillows</span>
+
+              <h3 class="featured-collection__name">Cloud Support Pillow</h3>
+
+              <p class="featured-collection__text">
+                Plush yet supportive comfort designed for your head and neck.
+              </p>
+
+              <div class="featured-collection__footer">
+                <p class="featured-collection__price">₹1,899</p>
+
+                <a href="#products-grid" class="btn-secondary">
+                  <span>View Product</span>
+                  <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section
+      class="comfort-benefits"
+      id="comfort-benefits"
+      aria-labelledby="comfortBenefitsTitle"
+    >
+      <div class="comfort-benefits__container">
+        <div class="comfort-benefits__header">
+          <span class="comfort-benefits__tag">
+            <span>Comfort & Lifestyle</span>
+          </span>
+
+          <h2 class="comfort-benefits__heading" id="comfortBenefitsTitle">
+            Discover Your
+            <span>Perfect Comfort.</span>
+          </h2>
+
+          <p class="comfort-benefits__description">
+            Create a sleep environment that feels calm, comfortable, and
+            completely your own — from supportive mattresses to the finishing
+            touches that complete your space.
+          </p>
+        </div>
+
+        <div class="comfort-benefits__grid">
+          <article class="comfort-benefits__card">
+            <div class="comfort-benefits__image-wrap">
+              <img
+                src="./images/benefit-restful-support.jpg"
+                alt="Restful support from a quality mattress"
+                class="comfort-benefits__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="comfort-benefits__content">
+              <span class="comfort-benefits__icon">
+                <i data-lucide="bed-double" aria-hidden="true"></i>
+              </span>
+
+              <h3 class="comfort-benefits__name">Restful Support</h3>
+
+              <p class="comfort-benefits__text">
+                Quality mattresses designed to provide balanced comfort and
+                lasting support for deeper, more restful sleep.
+              </p>
+            </div>
+          </article>
+
+          <article class="comfort-benefits__card">
+            <div class="comfort-benefits__image-wrap">
+              <img
+                src="./images/benefit-softness.jpg"
+                alt="Soft bedding, pillows, and luxurious fabrics"
+                class="comfort-benefits__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="comfort-benefits__content">
+              <span class="comfort-benefits__icon">
+                <i data-lucide="feather" aria-hidden="true"></i>
+              </span>
+
+              <h3 class="comfort-benefits__name">Softness You’ll Love</h3>
+
+              <p class="comfort-benefits__text">
+                Soft bedding, plush pillows, and luxurious fabrics that make
+                every night feel indulgent.
+              </p>
+            </div>
+          </article>
+
+          <article class="comfort-benefits__card">
+            <div class="comfort-benefits__image-wrap">
+              <img
+                src="./images/benefit-calm-space.jpg"
+                alt="Curtains creating a calm and relaxing bedroom"
+                class="comfort-benefits__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="comfort-benefits__content">
+              <span class="comfort-benefits__icon">
+                <i data-lucide="moon" aria-hidden="true"></i>
+              </span>
+
+              <h3 class="comfort-benefits__name">A Calmer Space</h3>
+
+              <p class="comfort-benefits__text">
+                Curtains and calming elements that soften light and create a
+                peaceful, relaxing bedroom.
+              </p>
+            </div>
+          </article>
+
+          <article class="comfort-benefits__card">
+            <div class="comfort-benefits__image-wrap">
+              <img
+                src="./images/benefit-finishing-touches.jpg"
+                alt="Home décor accessories completing the sleep space"
+                class="comfort-benefits__image"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div class="comfort-benefits__content">
+              <span class="comfort-benefits__icon">
+                <i data-lucide="lamp" aria-hidden="true"></i>
+              </span>
+
+              <h3 class="comfort-benefits__name">Finishing Touches</h3>
+
+              <p class="comfort-benefits__text">
+                Thoughtful home décor accessories that bring warmth and
+                character to your sleep space.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section
+      class="comfort-finder"
+      id="comfort-finder"
+      aria-labelledby="comfortFinderTitle"
+    >
+      <div class="comfort-finder__container">
+        <div class="comfort-finder__inner">
+          <div class="comfort-finder__content">
+            <span class="comfort-finder__tag">
+              <span>Comfort Finder</span>
+            </span>
+
+            <h2 class="comfort-finder__heading" id="comfortFinderTitle">
+              Not Sure
+              <span>Where to Start?</span>
+            </h2>
+
+            <p class="comfort-finder__description">
+              Whether you’re choosing your first mattress or refreshing your
+              entire sleep space, our team is here to help you find comfort that
+              feels made for you.
+            </p>
+
+            <ul class="comfort-finder__points">
+              <li>
+                <i data-lucide="check" aria-hidden="true"></i>
+                <span>Personalised product recommendations</span>
+              </li>
+
+              <li>
+                <i data-lucide="check" aria-hidden="true"></i>
+                <span>Guidance from our sleep experts</span>
+              </li>
+
+              <li>
+                <i data-lucide="check" aria-hidden="true"></i>
+                <span>Options for every comfort and budget</span>
+              </li>
+            </ul>
+
+            <div class="comfort-finder__actions">
+              <a href="#products-grid" class="btn-primary">
+                <span>Explore Collection</span>
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+
+              <a href="#contact" class="btn-secondary">
+                <span>Contact Our Team</span>
+                <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="comfort-finder__image-wrap">
+            <img
+              src="./images/comfort-finder.jpg"
+              alt="A calm and comfortable bedroom with premium bedding"
+              class="comfort-finder__image"
+              width="1200"
+              height="1400"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <span class="comfort-finder__badge">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              <span>Comfort Finder</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="final-cta" id="final-cta" aria-labelledby="finalCtaTitle">
+      <div class="final-cta__container">
+        <div class="final-cta__content">
+          <span class="final-cta__tag">
+            <span>Visit Us</span>
+          </span>
+
+          <h2 class="final-cta__heading" id="finalCtaTitle">
+            Still Deciding?
+            <span>Visit Our Studio.</span>
+          </h2>
+
+          <p class="final-cta__description">
+            Experience our mattresses, bedding, and décor in person. Our team
+            will help you find the perfect comfort for your space.
+          </p>
+
+          <div class="final-cta__actions">
+            <a href="#store-visit" class="btn-primary">
+              <span>Plan a Store Visit</span>
+              <i data-lucide="calendar-check" aria-hidden="true"></i>
+            </a>
+
+            <a
+              href="https://wa.me/919999999999"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-secondary"
+            >
+              <span>WhatsApp Us</span>
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <a href="#trial-return-policy" class="final-cta__policy-link">
+            <span>View Trial & Return Policy</span>
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col footer-brand-col">
+          <a
+            href="index.html"
+            class="dozehaven-logo footer-dozehaven-logo"
+            aria-label="DozeHaven — Luxury Sleep Living"
+          >
+            <span class="dozehaven-logo__image-wrap">
+              <img
+                src="./images/logo.png"
+                alt="DozeHaven luxury sleep living logo"
+                class="dozehaven-logo__image"
+              />
+            </span>
+
+            <span class="dozehaven-logo__content">
+              <span class="dozehaven-logo__name">
+                <span class="dozehaven-logo__doze">Doze</span
+                ><span class="dozehaven-logo__haven">Haven</span>
+              </span>
+
+              <span class="dozehaven-logo__tagline">
+                <span class="dozehaven-logo__line"></span>
+                <span>LUXURY SLEEP LIVING</span>
+                <span class="dozehaven-logo__line"></span>
+              </span>
+            </span>
+          </a>
+
+          <p class="footer-about">
+            DozeHaven creates refined sleep living essentials, premium pillows,
+            bedding, and thoughtfully designed comfort for restful nights.
+          </p>
+
+          <div class="social">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="DozeHaven on Instagram"
+            >
+              <i data-lucide="instagram"></i>
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="DozeHaven on Facebook"
+            >
+              <i data-lucide="facebook"></i>
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="DozeHaven on YouTube"
+            >
+              <i data-lucide="youtube"></i>
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="DozeHaven on LinkedIn"
+            >
+              <i data-lucide="linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="pillows-bedding.html">Pillows &amp; Bedding</a></li>
+            <li>
+              <a href="trial-return-policy.html">Trial &amp; Return Policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Our Products</h3>
+
+          <ul class="footer-links">
+            <li><a href="pillows-bedding.html">Premium Pillows</a></li>
+            <li><a href="pillows-bedding.html">Luxury Bedding</a></li>
+            <li><a href="products.html">Sleep Essentials</a></li>
+            <li><a href="products.html">Comfort Collections</a></li>
+            <li><a href="products.html">New Arrivals</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+
+          <ul class="footer-links">
+            <li><a href="about.html">Our Story</a></li>
+            <li>
+              <a href="trial-return-policy.html">Trial &amp; Return Policy</a>
+            </li>
+            <li><a href="contact.html#enquiry-form">Request an Enquiry</a></li>
+            <li><a href="404.html">404 Page</a></li>
+            <li><a href="comming.html">Upcoming</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+
+          <ul class="contact">
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="map-pin"></i>
+              </span>
+
+              <span>Hyderabad, Telangana, India</span>
+            </li>
+
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="phone"></i>
+              </span>
+
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+
+            <li>
+              <span class="contact-icon">
+                <i data-lucide="mail"></i>
+              </span>
+
+              <a href="mailto:hello@dozehaven.com">hello@dozehaven.com</a>
+            </li>
+          </ul>
+
+          <a href="contact.html#enquiry-form" class="btn-primary footer-quote">
+            <span>Start Your Enquiry</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 DozeHaven. All Rights Reserved.</p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+
+          <a href="#top" class="top-btn" aria-label="Back to top">
+            <i data-lucide="arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@0.542.0/dist/umd/lucide.min.js"></script>
+    <script src="./main/main.js"></script>
+    <script src="products.js"></script>
+  </body>
+</html>
