@@ -3,7 +3,7 @@
   isolation: isolate;
   display: flex;
   width: 100%;
-  min-height: clamp(660px, 85svh, 880px);
+  min-height: clamp(680px, 85svh, 880px);
   align-items: center;
   overflow: hidden;
   background-color: var(--surface-alt);
@@ -36,7 +36,7 @@
   max-width: 1584px;
   margin-inline: auto;
   padding-block: 90px;
-  padding-inline: 42px;
+  padding-inline: 90px;
 }
 
 .bedding-hero__content {
@@ -236,7 +236,7 @@ html[dir="rtl"] body.dark-mode .bedding-hero::before {
   width: 100%;
   max-width: 1560px;
   margin-inline: auto;
-  padding-inline: clamp(20px, 6vw, 110px);
+  padding-inline: 90px;
 }
 
 .bedding-categories__header {
@@ -469,7 +469,7 @@ html[dir="rtl"] .bedding-categories__link svg {
   width: 100%;
   max-width: 1560px;
   margin-inline: auto;
-  padding-inline: clamp(20px, 6vw, 110px);
+  padding-inline: 90px;
 }
 
 .bedding-benefits__header {
@@ -664,7 +664,7 @@ html[dir="rtl"] .bedding-benefits {
   width: 100%;
   max-width: 1560px;
   margin-inline: auto;
-  padding-inline: clamp(20px, 6vw, 110px);
+  padding-inline: 90px;
 }
 
 .fabric-care__inner {

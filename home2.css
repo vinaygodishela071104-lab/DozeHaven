@@ -14,7 +14,8 @@
   position: relative;
   isolation: isolate;
   display: flex;
-  min-height: clamp(580px, 76svh, 800px);
+
+  min-height: clamp(680px, 85svh, 880px);
   align-items: center;
   padding-block: 72px 104px;
   background-color: var(--background);
